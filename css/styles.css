@@ -1,0 +1,165 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.robot {
+    position: relative;
+}
+
+/* Etiqueta de nombre */
+.name-tag {
+    position: absolute;
+    top: -50px;
+    right: -60px;
+    background-color: white;
+    padding: 5px 10px;
+    border: 2px solid black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Cabeza */
+.head {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    border: 3px solid black;
+    position: relative;
+    margin: 0 auto;
+}
+
+.antenna-top {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.eyes {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+
+.eye {
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.nose {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mouth {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.antenna-left, .antenna-right {
+    width: 10px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 30px;
+}
+
+.antenna-left {
+    left: -20px;
+}
+
+.antenna-right {
+    right: -20px;
+}
+
+/* Cuello */
+.neck {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+/* Torso */
+.torso {
+    width: 100px;
+    height: 150px;
+    background-color: orange;
+    border: 3px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stripe {
+    width: 80px;
+    height: 30px;
+    background-color: limegreen;
+    border: 2px solid black;
+}
+
+/* Base */
+.base {
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    border: 3px solid black;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.base-stripe {
+    width: 30px;
+    height: 30px;
+    background-color: limegreen;
+    border: 2px solid black;
+}
+
+/* Brazos */
+.arm {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    top: 200px;
+}
+
+.left {
+    left: -85px;
+}
+
+.right {
+    right: -85px;
+}
